@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Miriam+Libre&family=Source+Sans+Pro:wght@900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(to right, #cfc4b4, #dad5c8);
+  hyphens: auto;
+  /* font-family: "Source Sans Pro", sans-serif; */
+}
+
+.container {
+  width: 60%;
+  min-width: 340px;
+  margin: 20px auto;
+  /* background-color: #fff; */
+  box-shadow: -30px 30px 100px rgba(0, 0, 0, 0.6);
+}
+
+header .row {
+  display: flex;
+}
+
+header .col-40 {
+  width: 40%;
+  background-color: #f3f3eb;
+}
+
+header .col-60 {
+  width: 60%;
+  background-color: #fff;
+}
+
+main .row {
+  display: flex;
+}
+
+main .col-40 {
+  width: 40%;
+  background-color: #f3f3eb;
+}
+
+main .col-60 {
+  width: 60%;
+  background-color: #fff;
+}
+
+main .col-40 .col-40-container {
+  margin: 0 60px;
+}
+
+main .col-60 .col-60-container {
+  margin: 0 60px;
+}
+
+.block-title {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  background-color: #696969;
+  margin-bottom: 40px;
+  padding: 12px 0;
+}
+
+/* -------------------------------- INFO BLOCK -------------------------------- */
+
+.avatar-block {
+  text-align: center;
+  padding: 50px 30px;
+}
+
+.avatar-block img {
+  width: 200px;
+  border-radius: 50%;
+  /* filter: grayscale(100%); */
+}
+
+/* -------------------------------- INFO BLOCK -------------------------------- */
+
+.info-block {
+  padding: 50px 60px;
+}
+
+.info-block div.user-name {
+  font-size: 50px;
+  font-weight: bold;
+  color: #3a3a3a;
+  margin-bottom: 30px;
+}
+
+.info-block p.qualification {
+  color: #606060;
+  font-size: 20px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+/* -------------------------------- PROFILE BLOCK -------------------------------- */
+
+.profile-block {
+  text-align: center;
+  margin-bottom: 50px;
+  /* font-family: "Miriam Libre", sans-serif; */
+}
+
+.profile-block .description {
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 40px;
+  color: rgb(171, 168, 168);
+}
+
+.profile-block .contact {
+  text-align: left;
+  font-size: 14px;
+}
+
+.profile-block div.contact > p {
+  margin-bottom: 10px;
+}
+
+.profile-block div.contact > p > a {
+  margin: 10px 0;
+  text-decoration: none;
+  color: #000;
+}
+
+.profile-block div.contact img.icon {
+  width: 15px;
+  margin-right: 15px;
+}
+
+/* -------------------------------- EXPERIENCE BLOCK -------------------------------- */
+
+.experience-block {
+  text-align: center;
+}
+
+/* .experience-block .card .card-title {
+  display: flex;
+} */
+
+.card {
+  margin-bottom: 50px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.card-title .job-name {
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.card-title .date-range {
+  float: right;
+}
+
+.card-title .company-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #949494;
+}
+
+.card-body {
+  text-align: left;
+  color: rgb(171, 168, 168);
+}
+
+.card-body p {
+  margin-bottom: 10px;
+}
+
+.card-body ul {
+  margin-left: 30px;
+}
+
+/* .experience-block .card {
+  text-align: center;
+} */
+
+/* -------------------------------- INTERESTS BLOCK -------------------------------- */
+
+.interests-block {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.interests-block div.description {
+  text-align: left;
+  color: rgb(171, 168, 168);
+}
+
+/* -------------------------------- EDUCATION BLOCK -------------------------------- */
+
+.education-block {
+  text-align: center;
+}
+
+.education-block h4 {
+  margin-bottom: 10px;
+}
+
+.education-block p.year {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.education-block p.description {
+  text-align: left;
+  color: rgb(171, 168, 168);
+}
+
+/* -------------------------------- MEDIA -------------------------------- */
+
+@media (max-width: 1350px) {
+  header .row {
+    display: block;
+  }
+
+  header .col-40 {
+    width: 100%;
+  }
+
+  header .col-60 {
+    width: 100%;
+  }
+
+  main .row {
+    display: block;
+    background-color: #fff;
+  }
+
+  main .col-40 {
+    width: 100%;
+    background-color: #fff;
+  }
+
+  main .col-60 {
+    width: 100%;
+    background-color: #fff;
+  }
+
+  main .col-40 .col-40-container {
+    margin: 0 15px;
+  }
+
+  .col-40-container .profile-block {
+    margin-bottom: 50px;
+  }
+
+  main .col-60 .col-60-container {
+    margin: 0 15px;
+  }
+
+  .profile-block div.contact {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .info-block {
+    text-align: center;
+    padding: 50px 15px;
+  }
+
+  .card-body {
+    text-align: left;
+  }
+
+  .card-body ul {
+    list-style: none;
+    margin: 0;
+  }
+
+  .card-body ul > li {
+    display: inline;
+    margin-right: 10px;
+    color: #fff;
+    background-color: #dad5c8;
+    padding: 5px 3px;
+    border-radius: 3px;
+  }
+
+  .card-title .job-name {
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  .card-title .date-range {
+    float: left;
+  }
+  .card-title {
+    text-align: left;
+  }
+
+  .interests-block {
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-device-width: 1280px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .interests-block {
+    padding-bottom: 50px;
+  }
+
+  .education-block p {
+    text-align: center;
+  }
+
+  .footer {
+    display: none;
+  }
+}
